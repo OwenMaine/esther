@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Happy Birthday Esther</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="text-primary fw-bold m-0">Esther's 25th</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+        <div class="navbar-nav mx-auto py-0">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+        </div>
+        <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+            <h1 class="text-primary fw-bold m-0">Esther's 25th</h1>
+        </a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Header Start -->
+<div class="container-fluid bg-light mt-6 pt-6" id="home" style="background-color: rgb(218, 116, 171);">
+    <div class="container pt-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                <h3 class="text-primary mb-3">Happy Birthday</h3>
+                <h1 class="display-3 mb-3">Esther</h1>
+                <h2 class="typed-text-output d-inline"></h2>
+                <div class="typed-text d-none">Beautiful Soul, Amazing Friend, Quarter Century Queen, Birthday Girl</div>
+                <div class="d-flex align-items-center pt-5">
+                    <button type="button" class="btn-play" data-bs-toggle="modal"
+                        data-src="img/1.mp4" data-bs-target="#videoModal">
+                        <span></span>
+                    </button>
+                    <h5 class="ms-4 mb-0 d-none d-sm-block">Watch Birthday Reel</h5>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="birthday-image-container">
+                    <img class="img-fluid birthday-image" src="img/1.jpg" alt="Birthday Girl Esther">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Add this CSS to your stylesheet -->
+<style>
+.birthday-image-container {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.birthday-image:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 991.98px) {
+    .birthday-image-container {
+        height: 400px;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .birthday-image-container {
+        height: 350px;
+        max-width: 300px;
+    }
+}
+</style>
+
+
+<!-- Video Modal Start -->
+<div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Esther's Birthday Memories</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <!-- First video -->
+                <div class="video-container mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" 
+                            allowfullscreen allowscriptaccess="always" allow="autoplay">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Second video -->
+                <div class="video-container">
+                    <div class="ratio ratio-16x9">
+                        <video class="embed-responsive-item" controls>
+                            <source src="img/2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video Modal End -->
+
+<!-- Add this CSS to your stylesheet -->
+<style>
+.modal-video {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-video .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-video .modal-content {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-video .modal-header {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+.modal-video .modal-body {
+    padding: 1.5rem;
+}
+
+.video-container {
+    background-color: #000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.modal-video .ratio {
+    border-radius: 4px;
+}
+
+.modal-video .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 60px);
+}
+</style>
+
+
+    <!-- About Start -->
+<div class="container-xxl py-6" id="about">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex align-items-center mb-5">
+                    <div class="years flex-shrink-0 text-center me-4">
+                        <h1 class="display-1 mb-0">25</h1>
+                        <h5 class="mb-0">Years</h5>
+                    </div>
+                    <h3 class="lh-base mb-0">of bringing joy, love, and light to everyone around you</h3>
+                </div>
+                <p class="mb-4">Dearest Esther, as you step into your 25th year, you're not just celebrating another birthday – you're celebrating a quarter century of beautiful moments, incredible achievements, and countless lives you've touched with your presence. Your journey has been nothing short of inspiring, and today, we celebrate the amazing woman you've become.</p>
+                <p class="mb-3"><i class="far fa-heart text-primary me-3"></i>Your smile lights up every room you enter</p>
+                <p class="mb-3"><i class="far fa-heart text-primary me-3"></i>Your strength inspires those around you</p>
+                <p class="mb-3"><i class="far fa-heart text-primary me-3"></i>Your kindness makes the world a better place</p>
+                <div class="mt-4">
+                    <h4 class="text-primary mb-3">A Birthday Wish For You</h4>
+                    <p class="fst-italic">May this year bring you endless opportunities, boundless joy, and dreams that turn into reality. You deserve every bit of happiness this world has to offer. Your 25th year is going to be your best chapter yet – full of adventures, achievements, and beautiful memories waiting to be made.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <img class="img-fluid rounded" src="img/2.jpg" alt="Esther's Special Moments">
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-fluid rounded" src="img/3.jpg" alt="Birthday Girl Esther">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <h5 class="border-end pe-3 me-3 mb-0">Blessed Years</h5>
+                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">25</h2>
+                </div>
+                <p class="mb-4">As you embrace this milestone, remember that you're not just turning 25 – you're stepping into a new chapter filled with endless possibilities. Your past has shaped you, but your future is yours to write.</p>
+                <div class="d-flex align-items-center mb-3">
+                    <h5 class="border-end pe-3 me-3 mb-0">Beautiful Dreams</h5>
+                    <h2 class="text-primary fw-bold mb-0">∞</h2>
+                </div>
+                <p class="mb-0">May your dreams be bigger than your fears, your actions speak louder than your words, and your heart stay as beautiful as it is today. Here's to you, Esther – to your past achievements, your present joy, and your future success. Happy 25th Birthday!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Birthday Qualities Start -->
+<div class="container-xxl py-6 pb-5" id="skill">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5 mb-5">25 Years of Amazing Qualities</h1>
+                <p class="mb-4">Every year has added a new layer of beauty to who you are, Esther. Here's celebrating the wonderful qualities that make you uniquely you!</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Kindness</h6>
+                                <h6 class="font-weight-bold">∞%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Beauty</h6>
+                                <h6 class="font-weight-bold">∞%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Strength</h6>
+                                <h6 class="font-weight-bold">∞%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Joy</h6>
+                                <h6 class="font-weight-bold">∞%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                    <li class="nav-item w-50">
+                        <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Life Moments</button>
+                    </li>
+                    <li class="nav-item w-50">
+                        <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Birthday Wishes</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row gy-5 gx-4">
+                            <div class="col-sm-6">
+                                <h5>Past</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">24 Beautiful Years</p>
+                                <h6 class="mb-0">Full of Amazing Memories</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Present</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">Your Special Day</p>
+                                <h6 class="mb-0">Celebrating You</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row gy-5 gx-4">
+                            <div class="col-sm-6">
+                                <h5>Future</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">Endless Possibilities</p>
+                                <h6 class="mb-0">Dreams Coming True</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Always</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">Infinite Love</p>
+                                <h6 class="mb-0">Forever Blessed</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Birthday Qualities End -->
+
+
+<!-- Copyright Start -->
+<div class="container-fluid bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                Made with ❤️ for Esther's 25th Birthday
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                Created by Owen | April 17th, 2025
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
